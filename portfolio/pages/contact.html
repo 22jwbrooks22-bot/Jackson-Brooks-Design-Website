@@ -59,7 +59,7 @@
           </div>
 
           <div class="contact-form">
-            <form id="contact-form">
+            <form id="contact-form" name="contact" method="POST" data-netlify="true">
               <div class="form-field">
                 <label class="form-label" for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -79,11 +79,6 @@
               <button type="submit" class="form-submit">Send Message →</button>
             </form>
 
-            <p style="margin-top:20px; font-size:11px; color:var(--ink-35); line-height:1.7;">
-              Note: This form currently sends to a placeholder. To enable real email delivery,
-              connect it to Formspree, Netlify Forms, or a similar service.
-              See the README for instructions.
-            </p>
           </div>
 
         </div>
