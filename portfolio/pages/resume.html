@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Jackson Brooks — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ivory:  #F7F3EC;
+      --ink:    #1E1A16;
+      --ink-60: rgba(30,26,22,0.6);
+      --ink-35: rgba(30,26,22,0.35);
+      --ink-15: rgba(30,26,22,0.15);
+      --terra:  #8B6E52;
+      --serif:  'Cormorant Garamond', serif;
+      --sans:   'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--ivory);
+      font-family: var(--serif);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 60px 80px;
+    }
+
+    /* ── HEADER ── */
+    .name {
+      font-family: var(--serif);
+      font-size: 52px;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .contact-line {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--ink-60);
+      margin-bottom: 36px;
+    }
+    .contact-line a { color: var(--ink-60); text-decoration: none; }
+    .contact-line .dot { margin: 0 8px; color: var(--ink-35); }
+
+    /* ── SECTION ── */
+    .section { margin-bottom: 28px; }
+
+    .section-title {
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .section-rule {
+      height: 0.5px;
+      background: var(--ink);
+      margin-bottom: 14px;
+    }
+
+    /* ── ENTRY ── */
+    .entry { margin-bottom: 16px; }
+    .entry:last-child { margin-bottom: 0; }
+
+    .entry-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .entry-company {
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--ink);
+    }
+    .entry-date {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--ink);
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+    .entry-role {
+      font-family: var(--serif);
+      font-size: 13px;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--ink-60);
+      margin-bottom: 6px;
+    }
+    .entry-bullets {
+      list-style: disc;
+      padding-left: 18px;
+    }
+    .entry-bullets li {
+      font-family: var(--serif);
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-60);
+      margin-bottom: 2px;
+    }
+
+    /* ── SKILLS ── */
+    .skill-line {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+    .skill-line strong { font-weight: 400; }
+
+    /* ── PRINT ── */
+    @media print {
+      @page { size: 8.5in 11in; margin: 0; }
+      body { background: #fff; }
+      .page { padding: 40px 56px 44px; }
+      .name { font-size: 40px; margin-bottom: 8px; }
+      .contact-line { margin-bottom: 24px; }
+      .section { margin-bottom: 20px; }
+      .entry { margin-bottom: 12px; }
+      .entry-bullets li { font-size: 12.5px; line-height: 1.6; }
+      .skill-line { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="name">Jackson Brooks</div>
+  <div class="contact-line">
+    <a href="mailto:22jwbrooks22@gmail.com">22jwbrooks22@gmail.com</a>
+    <span class="dot">•</span>
+    Sarasota, FL
+    <span class="dot">•</span>
+    <a href="https://jacksonbrooksdesign.com">jacksonbrooksdesign.com</a>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="section-rule"></div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">California Baptist University, Riverside CA</div>
+        <div class="entry-date">Expected 2029</div>
+      </div>
+      <div class="entry-role">B.Arch / M.Arch — Year 3 of 5 &nbsp;·&nbsp; GPA 3.7</div>
+      <ul class="entry-bullets">
+        <li>Focus: Regional vernacular architecture, classical tradition, and sacred geometry</li>
+        <li>Relevant coursework: Design Studio I &amp; II, Structures, Architectural History, Building Technology</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Sarasota Virtual School, Sarasota FL</div>
+        <div class="entry-date">2024</div>
+      </div>
+      <div class="entry-role">High School Diploma &nbsp;·&nbsp; GPA 3.9</div>
+    </div>
+
+  </div>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    <div class="section-rule"></div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Homestead Timber Frames, Cookeville TN</div>
+        <div class="entry-date">Summer 2026</div>
+      </div>
+      <div class="entry-role">Joiner</div>
+      <ul class="entry-bullets">
+        <li>Produced traditional mortise and tenon timber frames for mountain home construction</li>
+        <li>Chiseled, sawed, and sanded large structural timbers to specification in the production shop</li>
+        <li>Participated in on-site frame assembly with the full construction team</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Yoder's Tree Service, Sarasota FL</div>
+        <div class="entry-date">May – Aug 2025</div>
+      </div>
+      <div class="entry-role">Crew Member</div>
+      <ul class="entry-bullets">
+        <li>Performed tree removal, trimming, and site cleanup across residential and commercial properties</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Peridia Country Club, Sarasota FL</div>
+        <div class="entry-date">Jun 2023 – May 2024</div>
+      </div>
+      <div class="entry-role">Staff</div>
+      <ul class="entry-bullets">
+        <li>Provided service in a private club environment, developing professionalism and client relations skills</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS & EXTRACURRICULAR -->
+  <div class="section">
+    <div class="section-title">Projects &amp; Extracurricular</div>
+    <div class="section-rule"></div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Schindler Addition — Design Studio I</div>
+        <div class="entry-date">2025</div>
+      </div>
+      <div class="entry-role">Project Manager · California Baptist University</div>
+      <ul class="entry-bullets">
+        <li>Appointed project manager over 30 students for the construction of the studio site model</li>
+        <li>Coordinated team workflow, delegated tasks, and oversaw model assembly to completion</li>
+        <li>Designed a residential addition to the Schindler House, West Hollywood CA</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Poetry Foundation — Design Studio II</div>
+        <div class="entry-date">2026</div>
+      </div>
+      <div class="entry-role">Civic · California Baptist University · Chicago, IL</div>
+      <ul class="entry-bullets">
+        <li>Designed a civic cultural center organized around procession and the Chicago classical tradition</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Bent Nail Ministries — Zambia</div>
+        <div class="entry-date">Summer</div>
+      </div>
+      <div class="entry-role">Construction Volunteer</div>
+      <ul class="entry-bullets">
+        <li>Served on a construction mission trip in Zambia, contributing hands-on labor to community building projects</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-company">Sketching &amp; Art</div>
+        <div class="entry-date">Ongoing</div>
+      </div>
+      <div class="entry-role">Personal · Graphite, Pen, Watercolor</div>
+      <ul class="entry-bullets">
+        <li>Sustained observational drawing practice; completed Drawing Academy classical drawing course (2026)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="section-rule"></div>
+    <div class="skill-line"><strong>Software:</strong> SketchUp / Layout, Revit, Adobe Creative Cloud</div>
+    <div class="skill-line"><strong>Craft:</strong> Timber framing, traditional mortise and tenon joinery, on-site frame assembly</div>
+    <div class="skill-line"><strong>Drawing:</strong> Graphite pencil, pen, watercolor, freehand architectural illustration</div>
+    <div class="skill-line"><strong>Language:</strong> English (native)</div>
+  </div>
+
+</div>
+</body>
+</html>
