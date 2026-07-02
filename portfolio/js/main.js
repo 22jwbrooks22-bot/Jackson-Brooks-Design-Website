@@ -21,7 +21,7 @@ if (form) {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
     const data = new URLSearchParams(new FormData(form)).toString();
-    fetch('/', {
+    fetch('https://formspree.io/f/xgojnbqd', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: data
