@@ -20,13 +20,22 @@ if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
-    btn.textContent = 'Message Sent';
-    btn.style.background = '#8B6E52';
-    setTimeout(() => {
-      form.reset();
-      btn.textContent = 'Send Message';
-      btn.style.background = '';
-    }, 3000);
+    const data = new URLSearchParams(new FormData(form)).toString();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data
+    }).then(() => {
+      btn.textContent = 'Message Sent';
+      btn.style.background = '#8B6E52';
+      setTimeout(() => {
+        form.reset();
+        btn.textContent = 'Send Message →';
+        btn.style.background = '';
+      }, 3000);
+    }).catch(() => {
+      btn.textContent = 'Error — try email instead';
+    });
   });
 }
 
