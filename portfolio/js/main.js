@@ -20,19 +20,22 @@ if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
-    const data = new URLSearchParams(new FormData(form)).toString();
     fetch('https://formspree.io/f/xgojnbqd', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json' },
-      body: data
-    }).then(() => {
-      btn.textContent = 'Message Sent';
-      btn.style.background = '#8B6E52';
-      setTimeout(() => {
-        form.reset();
-        btn.textContent = 'Send Message →';
-        btn.style.background = '';
-      }, 3000);
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        btn.textContent = 'Message Sent';
+        btn.style.background = '#8B6E52';
+        setTimeout(() => {
+          form.reset();
+          btn.textContent = 'Send Message →';
+          btn.style.background = '';
+        }, 3000);
+      } else {
+        btn.textContent = 'Error — try email instead';
+      }
     }).catch(() => {
       btn.textContent = 'Error — try email instead';
     });
