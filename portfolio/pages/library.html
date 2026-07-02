@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Library — Jackson Brooks Design</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    @media (max-width: 600px) {
+      .architects-grid { grid-template-columns: repeat(2,1fr) !important; }
+      .architects-grid > div { border-right: none !important; border-bottom: 0.5px solid var(--ink-15); }
+    }
+  </style>
 </head>
 <body>
 
@@ -142,7 +148,7 @@
         <!-- INFLUENCES -->
         <div style="margin-top:80px;">
           <div class="label" style="margin-bottom:28px;">Architects I Return To</div>
-          <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:0.5px solid var(--ink-15);">
+          <div class="architects-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:0.5px solid var(--ink-15);">
             <div style="padding:24px; border-right:0.5px solid var(--ink-15);">
               <div style="font-family:var(--serif); font-size:18px; margin-bottom:4px;">Hassan Fathy</div>
               <div style="font-size:11px; color:var(--ink-35);">For the Ancient Construction</div>
