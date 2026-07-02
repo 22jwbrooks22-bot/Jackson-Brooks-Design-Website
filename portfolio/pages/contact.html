@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jackson Brooks Design</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-name">Jackson Brooks Design</a>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="contact.html" class="nav-contact-btn">Contact</a></li>
+    </ul>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main>
+    <section class="section" style="min-height:calc(100vh - var(--nav-h) - 80px);">
+      <div class="section-inner">
+
+        <div style="max-width:400px; margin-bottom:60px;">
+          <div class="label" style="margin-bottom:20px;">Contact</div>
+        </div>
+
+        <div class="contact-grid">
+
+          <div>
+            <p class="contact-intro">
+              Open to internship opportunities, collaborative projects, and conversations about architecture.
+            </p>
+            <p style="font-size:13px; color:var(--ink-60); line-height:1.9; margin-top:20px;">
+              I am currently in my third year at California Baptist University. If you are a firm considering
+              summer interns, or a fellow student interested in collaboration, I would be glad to hear from you.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:22jwbrooks22@gmail.com" class="contact-link-row">
+                <span class="contact-link-label">Email</span>
+                <span>22jwbrooks22@gmail.com</span>
+                <span class="contact-link-arrow">→</span>
+              </a>
+              <a href="#" class="contact-link-row">
+                <span class="contact-link-label">LinkedIn</span>
+                <span>linkedin.com/in/jackson-brooks-432329323</span>
+                <span class="contact-link-arrow">→</span>
+              </a>
+              <a href="#" class="contact-link-row">
+                <span class="contact-link-label">CV</span>
+                <span>Download PDF</span>
+                <span class="contact-link-arrow">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-field">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What is this about?" />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit">Send Message →</button>
+            </form>
+
+            <p style="margin-top:20px; font-size:11px; color:var(--ink-35); line-height:1.7;">
+              Note: This form currently sends to a placeholder. To enable real email delivery,
+              connect it to Formspree, Netlify Forms, or a similar service.
+              See the README for instructions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-name">Jackson Brooks · Sarasota, FL · 2026</div>
+    <div class="footer-links">
+      <a href="mailto:22jwbrooks22@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/jackson-brooks-432329323">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

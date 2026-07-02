@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Jackson Brooks Design</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-name">Jackson Brooks Design</a>
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Writing</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="contact.html" class="nav-contact-btn">Contact</a></li>
+    </ul>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main>
+
+    <!-- ABOUT HERO -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; border-bottom:0.5px solid var(--ink-15); min-height:50vh;">
+      <div style="padding:80px 48px; border-right:0.5px solid var(--ink-15); display:flex; flex-direction:column; justify-content:flex-end;">
+        <div class="label" style="margin-bottom:24px;">About</div>
+        <h1 style="font-family:var(--serif); font-size:52px; font-weight:300; line-height:1.1; color:var(--ink);">
+          Jackson Brooks
+        </h1>
+        <p style="margin-top:16px; font-size:13px; color:var(--terra); letter-spacing:0.06em;">
+          Architecture Student · California Baptist University · Class of 2029
+        </p>
+      </div>
+      <div style="background:#ffffff; position:relative; overflow:hidden;">
+        <img src="../images/headshot.jpg" alt="Jackson Brooks" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain;" />
+      </div>
+    </div>
+
+    <!-- BIO -->
+    <div class="about-strip">
+      <div class="about-col">
+        <div class="label" style="margin-bottom:32px;">Biography</div>
+        <p class="about-pull">
+          Architecture should be rooted in tradition, craft, and community, and how we build is inseparable from how we live together.
+        </p>
+        <div class="about-body">
+          <p>
+            I am a third-year architecture student at California Baptist University, where I am developing a practice around craft, tradition, and sacred geometry. My work asks how space can carry meaning that has been earned over centuries — how a building can embody intention without explaining itself.
+          </p>
+          <p>
+            I grew up in Ohio and moved to Florida at sixteen. That displacement made me pay attention to what makes somewhere feel like somewhere, and that question has never really left me. It shows up in how I approach research and drawing, and in the way I tend to ask questions about a place long before I start designing.
+          </p>
+          <p>
+            I am drawn to architecture as civic and sacred art, to buildings that emerge from their communities rather than being imposed on them. American historical styles are where I am focused right now, though I keep returning to African and Middle Eastern vernacular as a kind of wellspring: buildings shaped by climate, material, and collective memory rather than individual signature. I work slowly, through physical models and a lot of observational drawing.
+          </p>
+          <p>
+            Outside of studio I read, sketch, backpack, hunt, and spend as much time outdoors as I can manage. I take notes on buildings that feel rooted in something older than their architects. And I find myself increasingly preoccupied with how communities are actually built and sustained, with the overlap between rewilding, regenerative agriculture, and the kind of close-knit village life that most of the modern world has quietly forgotten how to make.
+          </p>
+        </div>
+      </div>
+      <div class="about-col">
+        <div class="label" style="margin-bottom:32px;">Information</div>
+        <div class="info-list">
+          <div class="info-row">
+            <span class="info-key">School</span>
+            <span class="info-val">California Baptist University</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Degree</span>
+            <span class="info-val">B.Arch / M.Arch · Year 3</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Location</span>
+            <span class="info-val">Sarasota, Florida</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Languages</span>
+            <span class="info-val">English</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Software</span>
+            <span class="info-val">SketchUp, Revit, Adobe CC</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Portfolio / Resume</span>
+            <span class="info-val"><a href="#" style="color:var(--terra);">Download PDF →</a></span>
+          </div>
+        </div>
+
+        <div style="margin-top:48px;">
+          <div class="label" style="margin-bottom:24px;">Experience</div>
+          <div class="info-list">
+            <div class="info-row" style="flex-direction:column; align-items:flex-start; gap:4px;">
+              <div style="display:flex; justify-content:space-between; width:100%;">
+                <span style="font-family:var(--serif); font-size:15px;">Homestead Timber Frames</span>
+                <span class="info-key">Summer 2026</span>
+              </div>
+              <span style="font-size:11px; color:var(--ink-35);">Joiner · Cookeville, TN</span>
+            </div>
+            <div class="info-row" style="flex-direction:column; align-items:flex-start; gap:4px;">
+              <div style="display:flex; justify-content:space-between; width:100%;">
+                <span style="font-family:var(--serif); font-size:15px;">California Baptist University / Architecture</span>
+                <span class="info-key">2024 - 2029</span>
+              </div>
+              <span style="font-size:11px; color:var(--ink-35);">B.Arch / M.Arch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-name">Jackson Brooks · Sarasota, FL · 2026</div>
+    <div class="footer-links">
+      <a href="mailto:22jwbrooks22@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/jackson-brooks-432329323">LinkedIn</a>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 900px) {
+      div[style*="grid-template-columns:1fr 1fr"] {
+        display: block !important;
+      }
+    }
+  </style>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
