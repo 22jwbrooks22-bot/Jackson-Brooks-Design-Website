@@ -760,4 +760,5 @@ footer {
   .project-hero-title { font-size: 36px; }
 
   .img-grid { grid-template-columns: 1fr !important; }
+  .sketch-cell { background: transparent !important; }
 }
