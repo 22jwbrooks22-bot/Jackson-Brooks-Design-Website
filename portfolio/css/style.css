@@ -759,5 +759,5 @@ footer {
   .project-content { padding: 40px 24px; }
   .project-hero-title { font-size: 36px; }
 
-  .img-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .img-grid { grid-template-columns: 1fr !important; }
 }
