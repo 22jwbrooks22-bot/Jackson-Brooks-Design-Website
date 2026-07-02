@@ -758,4 +758,6 @@ footer {
   .project-sidebar { border-right: none; padding: 40px 24px; }
   .project-content { padding: 40px 24px; }
   .project-hero-title { font-size: 36px; }
+
+  .img-grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
