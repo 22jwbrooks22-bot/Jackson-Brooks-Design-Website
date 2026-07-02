@@ -23,7 +23,7 @@ if (form) {
     const data = new URLSearchParams(new FormData(form)).toString();
     fetch('https://formspree.io/f/xgojnbqd', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json' },
       body: data
     }).then(() => {
       btn.textContent = 'Message Sent';
