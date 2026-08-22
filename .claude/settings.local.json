@@ -7,7 +7,8 @@
       "PowerShell($cmds = @\\(\"python\",\"python3\",\"node\",\"npx\"\\); foreach \\($c in $cmds\\) { $r = Get-Command $c -ErrorAction SilentlyContinue; if \\($r\\) { \"$c -> $\\($r.Source\\)\" } else { \"$c -> not found\" } })",
       "mcp__Claude_Preview__preview_start",
       "PowerShell(Copy-Item \"C:\\\\Users\\\\jacks\\\\Downloads\\\\51cNdPwTFSL.jpg\" \"C:\\\\Users\\\\jacks\\\\Downloads\\\\portfolio\\\\portfolio\\\\images\\\\book-natural-timber.jpg\")",
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\jacks\\\\Downloads\\\\\" | Where-Object { $_.Name -match \"schindler|elevation\" -or $_.Name -match \"Schindler|Elevation\" } | Select-Object Name)"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\jacks\\\\Downloads\\\\\" | Where-Object { $_.Name -match \"schindler|elevation\" -or $_.Name -match \"Schindler|Elevation\" } | Select-Object Name)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

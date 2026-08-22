@@ -408,8 +408,8 @@ main { margin-top: var(--nav-h); flex: 1; }
 /* ─── LIBRARY ──────────────────────────────────────────────── */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   margin-top: 12px;
 }
 
@@ -419,7 +419,7 @@ main { margin-top: var(--nav-h); flex: 1; }
 }
 
 .book-spine {
-  height: 120px;
+  height: 220px;
   border-radius: 2px 4px 4px 2px;
   position: relative;
   overflow: hidden;
@@ -743,7 +743,7 @@ footer {
 
   .section { padding: 60px 24px; }
 
-  .books-grid { grid-template-columns: repeat(3, 1fr); }
+  .books-grid { grid-template-columns: repeat(2, 1fr); }
   .courses-grid { grid-template-columns: 1fr; }
   .courses-grid .course-card { border-right: none; }
 
