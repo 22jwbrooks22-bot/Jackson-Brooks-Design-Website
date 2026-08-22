@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cover Letter — Locati Architects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" />
+  <style>
+    :root {
+      --ivory:     #F7F3EC;
+      --ivory-mid: #EDE7DC;
+      --ink:       #1E1A16;
+      --ink-60:    rgba(30,26,22,0.6);
+      --ink-35:    rgba(30,26,22,0.35);
+      --ink-15:    rgba(30,26,22,0.15);
+      --terra:     #8B6E52;
+      --serif:     'Cormorant Garamond', serif;
+      --sans:      'Jost', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--ivory);
+      font-family: var(--sans);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 60px 100px;
+    }
+
+    /* LETTERHEAD */
+    .letterhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 28px;
+      border-bottom: 0.5px solid var(--ink-15);
+      margin-bottom: 52px;
+    }
+
+    .letterhead-name {
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .letterhead-contact {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .letterhead-contact span {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: var(--ink-35);
+      text-transform: uppercase;
+    }
+
+    .letterhead-contact a {
+      color: var(--terra);
+      text-decoration: none;
+    }
+
+    /* DATE & RECIPIENT */
+    .letter-meta {
+      margin-bottom: 44px;
+    }
+
+    .letter-date {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 24px;
+    }
+
+    .letter-recipient {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink-60);
+      line-height: 1.8;
+    }
+
+    /* BODY */
+    .letter-salutation {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 28px;
+    }
+
+    .letter-body p {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.85;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    /* CLOSING */
+    .letter-closing {
+      margin-top: 44px;
+    }
+
+    .letter-closing-word {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 36px;
+    }
+
+    .letter-sig-name {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .letter-sig-detail {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-35);
+      line-height: 1.9;
+    }
+
+    /* PRINT */
+    @media print {
+      body { background: #fff; }
+      .page { padding: 24px 56px 32px; }
+      .letterhead { padding-bottom: 14px; margin-bottom: 24px; }
+      .letterhead-name { font-size: 26px; }
+      .letter-meta { margin-bottom: 20px; }
+      .letter-date { margin-bottom: 14px; }
+      .letter-salutation { margin-bottom: 14px; font-size: 16px; }
+      .letter-body p { font-size: 14.5px; line-height: 1.7; margin-bottom: 12px; }
+      .letter-closing { margin-top: 14px; }
+      .letter-closing-word { margin-bottom: 12px; font-size: 14.5px; }
+      .letter-sig-name { font-size: 22px; margin-bottom: 4px; }
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 48px 28px 60px; }
+      .letterhead { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .letterhead-contact { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="letterhead">
+    <div class="letterhead-name">Jackson Brooks</div>
+    <div class="letterhead-contact">
+      <span><a href="mailto:22jwbrooks22@gmail.com">22jwbrooks22@gmail.com</a></span>
+      <span>Sarasota, Florida</span>
+      <span><a href="https://jacksonbrooksdesign.com">jacksonbrooksdesign.com</a></span>
+    </div>
+  </div>
+
+  <div class="letter-meta">
+    <div class="letter-date">July 2026</div>
+    <div class="letter-recipient">
+      Locati Architects<br>
+      Bozeman, Montana
+    </div>
+  </div>
+
+  <div class="letter-salutation">Dear Locati Architects,</div>
+
+  <div class="letter-body">
+    <p>
+      My grandfather built a life on the water, and for much of my childhood that life was centered
+      around a river house in Silverthorne, Colorado, a house your firm designed nearly a decade ago.
+      Every year I returned to that house, I found myself studying it more than inhabiting it.
+      The woodwork in the ceilings, the way the stone exterior seemed to settle into the base of the
+      mountain, the window placement that framed the river as deliberately as any painting; these were not
+      details I could name at the time, but they were shaping the way I understood what architecture
+      could do. That house remains one of the most formative places in my life, and it is the reason
+      I am writing to you now.
+    </p>
+    <p>
+      I am a third-year architecture student at California Baptist University pursuing a B.Arch/M.Arch,
+      and I am seeking a summer internship with Locati Architects for 2027. My academic work has
+      consistently oriented itself around regional and traditional building. The projects I have chosen
+      in studio, and the subjects I return to in my observational drawing, reflect a sustained interest
+      in architecture that belongs to its place. I believe a building should carry the memory of its
+      landscape, its materials, and the people who made it.
+    </p>
+    <p>
+      This summer I made a deliberate choice to work at Homestead Timber Frames in Cookeville,
+      Tennessee, a traditional mortise and tenon construction company that builds mountain homes.
+      My work there is entirely hands-on: I spend my days in the shop chiseling, sawing, and sanding
+      large timbers that our team then assembles on site. I sought this experience specifically because
+      I believe that understanding how a building is actually made, how wood behaves under a chisel,
+      how a joint transfers load, how a frame goes up, is foundational to designing with that
+      vocabulary honestly. I wanted to be useful to a firm like yours, and I thought the best way
+      to become useful was to begin with the material itself.
+    </p>
+    <p>
+      I would be grateful for the opportunity to contribute to your studio in summer 2027. My work
+      and background can be found at jacksonbrooksdesign.com, and I am glad to provide any
+      additional materials upon request. Thank you for the work you have put into the world,
+      including one house on a river in Silverthorne that I will never stop thinking about.
+    </p>
+  </div>
+
+  <div class="letter-closing">
+    <div class="letter-closing-word">Sincerely,</div>
+    <div class="letter-sig-name">Jackson Brooks</div>
+    <div class="letter-sig-detail">
+      B.Arch / M.Arch Candidate · California Baptist University · Class of 2029
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Jackson Brooks — Architecture Portfolio 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ivory:     #F7F3EC;
+      --ivory-mid: #EDE7DC;
+      --ink:       #1E1A16;
+      --ink-60:    rgba(30,26,22,0.6);
+      --ink-35:    rgba(30,26,22,0.35);
+      --ink-15:    rgba(30,26,22,0.15);
+      --terra:     #8B6E52;
+      --serif:     'Cormorant Garamond', serif;
+      --sans:      'Jost', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #C8BFB8;
+      font-family: var(--sans);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .pg {
+      width: min(1100px, 96vw);
+      aspect-ratio: 11 / 8.5;
+      margin: 20px auto;
+      background: var(--ivory);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lbl {
+      font-family: var(--sans);
+      font-size: 8px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-35);
+    }
+    .lbl-terra {
+      font-family: var(--sans);
+      font-size: 8px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--terra);
+    }
+
+    /* info block used on project intro pages */
+    .proj-info { display: grid; gap: 13px; }
+    .proj-info-row .k { display: block; font-family: var(--sans); font-size: 8px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-35); margin-bottom: 3px; }
+    .proj-info-row .v { font-family: var(--serif); font-size: 13px; font-weight: 300; color: var(--ink); }
+
+    .rule { width: 100%; height: 0.5px; background: var(--ink-15); }
+
+    /* drawings page header */
+    .draw-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 12px;
+      border-bottom: 0.5px solid var(--ink-15);
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .draw-header .title { font-family: var(--serif); font-size: 17px; font-weight: 300; color: var(--ink); }
+
+    @media print {
+      @page { size: 11in 8.5in; margin: 0; }
+      body { background: var(--ivory); margin: 0; }
+      .pg {
+        width: 11in;
+        height: 8.5in;
+        margin: 0;
+        aspect-ratio: unset;
+        page-break-after: always;
+        break-after: page;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════
+     1 · COVER
+═══════════════════════════════════ -->
+<div class="pg">
+  <!-- elevation right -->
+  <div style="position:absolute; right:0; top:0; width:63%; height:100%; overflow:hidden;">
+    <img src="../images/poetry-elev-1.jpg"
+         style="width:100%; height:100%; object-fit:contain; object-position:right center; display:block;"
+         alt="Poetry Foundation West Elevation"/>
+    <div style="position:absolute; inset:0; background:linear-gradient(to right, var(--ivory) 0%, transparent 28%);"></div>
+  </div>
+  <!-- name block bottom-left -->
+  <div style="position:absolute; bottom:48px; left:52px;">
+    <div style="font-family:var(--serif); font-size:44px; font-weight:300; letter-spacing:0.03em; color:var(--ink); line-height:1;">
+      Jackson Brooks
+    </div>
+    <div style="height:0.5px; background:var(--ink-15); margin:14px 0 12px; width:260px;"></div>
+    <div class="lbl-terra" style="letter-spacing:0.22em;">Architecture Portfolio &nbsp;·&nbsp; 2026</div>
+  </div>
+  <!-- top-left corner rule -->
+  <div style="position:absolute; top:40px; left:52px;">
+    <div class="lbl">Jackson Brooks Design</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     2 · BIO + TABLE OF CONTENTS
+═══════════════════════════════════ -->
+<div class="pg" style="display:grid; grid-template-columns:1fr 0.5px 1fr;">
+
+  <!-- Left: bio + headshot -->
+  <div style="padding:52px 44px; display:flex; flex-direction:column; justify-content:space-between;">
+    <div>
+      <div class="lbl-terra" style="margin-bottom:18px;">Biography</div>
+      <p style="font-family:var(--serif); font-size:13px; font-weight:300; line-height:1.85; color:var(--ink-60);">
+        I am a third-year architecture student at California Baptist University,
+        developing a practice around craft, tradition, and the built vernacular.
+        My work asks how space can carry meaning earned over centuries — how a
+        building can embody intention without explaining itself.
+      </p>
+      <p style="font-family:var(--serif); font-size:13px; font-weight:300; line-height:1.85; color:var(--ink-60); margin-top:14px;">
+        I am drawn to architecture as civic and sacred art: buildings that emerge
+        from their communities rather than being imposed on them. American historical
+        styles, African and Middle Eastern vernacular, and a deep commitment to
+        observational drawing shape both my academic work and independent study.
+      </p>
+    </div>
+    <div style="display:flex; align-items:flex-end; gap:20px;">
+      <img src="../images/headshot.jpg"
+           style="width:90px; height:116px; object-fit:cover; object-position:center top; display:block; flex-shrink:0;"
+           alt="Jackson Brooks"/>
+      <div>
+        <div style="font-family:var(--serif); font-size:15px; font-weight:300; color:var(--ink); margin-bottom:6px;">Jackson Brooks</div>
+        <div class="lbl" style="line-height:1.9;">
+          California Baptist University<br>
+          B.Arch / M.Arch · Class of 2029<br>
+          <span style="color:var(--terra);">22jwbrooks22@gmail.com</span><br>
+          <span style="color:var(--terra);">jacksonbrooksdesign.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div style="background:var(--ink-15);"></div>
+
+  <!-- Right: TOC -->
+  <div style="padding:52px 44px; display:flex; flex-direction:column; justify-content:center;">
+    <div style="font-family:var(--serif); font-size:26px; font-weight:300; letter-spacing:0.05em; color:var(--ink); margin-bottom:36px;">
+      Table of Contents
+    </div>
+    <div style="border-top:0.5px solid var(--ink-15);">
+
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--ink-15);">
+        <div>
+          <div class="lbl-terra" style="margin-bottom:7px;">I</div>
+          <div style="font-family:var(--serif); font-size:18px; font-weight:300; color:var(--ink);">Poetry Foundation</div>
+          <div class="lbl" style="margin-top:4px;">Civic · Design Studio II · 2026</div>
+        </div>
+        <div style="font-family:var(--serif); font-size:22px; font-weight:300; color:var(--ink-35);">3</div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--ink-15);">
+        <div>
+          <div class="lbl-terra" style="margin-bottom:7px;">II</div>
+          <div style="font-family:var(--serif); font-size:18px; font-weight:300; color:var(--ink);">Schindler Addition</div>
+          <div class="lbl" style="margin-top:4px;">Housing · Design Studio I · 2025</div>
+        </div>
+        <div style="font-family:var(--serif); font-size:22px; font-weight:300; color:var(--ink-35);">5</div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:0.5px solid var(--ink-15);">
+        <div>
+          <div class="lbl-terra" style="margin-bottom:7px;">III</div>
+          <div style="font-family:var(--serif); font-size:18px; font-weight:300; color:var(--ink);">Sketching &amp; Art</div>
+          <div class="lbl" style="margin-top:4px;">Personal · Lifelong</div>
+        </div>
+        <div style="font-family:var(--serif); font-size:22px; font-weight:300; color:var(--ink-35);">7</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════
+     3 · POETRY FOUNDATION — INTRO
+═══════════════════════════════════ -->
+<div class="pg" style="display:grid; grid-template-columns:2fr 3fr;">
+
+  <div style="padding:48px 40px; display:flex; flex-direction:column; justify-content:center; border-right:0.5px solid var(--ink-15);">
+    <div class="lbl-terra" style="margin-bottom:16px;">I &nbsp;·&nbsp; Studio Project</div>
+    <div style="font-family:var(--serif); font-size:34px; font-weight:300; line-height:1.1; color:var(--ink); margin-bottom:8px;">
+      Poetry<br>Foundation
+    </div>
+    <div class="lbl" style="margin-bottom:28px;">Civic Cultural Center · Chicago, IL</div>
+    <div class="rule" style="margin-bottom:24px;"></div>
+    <div class="proj-info" style="margin-bottom:24px;">
+      <div class="proj-info-row"><span class="k">Course</span><span class="v">Design Studio II · 2026</span></div>
+      <div class="proj-info-row"><span class="k">Type</span><span class="v">Civic / Cultural</span></div>
+      <div class="proj-info-row"><span class="k">Medium</span><span class="v">AutoCAD, SketchUp, Graphite</span></div>
+    </div>
+    <div class="rule" style="margin-bottom:24px;"></div>
+    <p style="font-family:var(--serif); font-size:13px; font-weight:300; line-height:1.8; color:var(--ink-60);">
+      A civic cultural institution designed to serve the Poetry Foundation's mission of
+      making poetry accessible to the public. The project centers a public garden, reading
+      room, and gallery within a single cohesive form, organized around procession and
+      the threshold between city and interior. The design draws on the Chicago classical
+      tradition while maintaining a restraint appropriate to its literary character.
+    </p>
+  </div>
+
+  <div style="overflow:hidden; background:var(--ivory-mid); display:flex; align-items:center; justify-content:center; padding:28px;">
+    <img src="../images/poetry-elev-1.jpg"
+         style="width:100%; height:100%; object-fit:contain; display:block;"
+         alt="West Elevation"/>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════
+     4 · POETRY FOUNDATION — DRAWINGS
+═══════════════════════════════════ -->
+<div class="pg" style="display:flex; flex-direction:column; padding:32px 40px;">
+
+  <div class="draw-header">
+    <div class="title">Poetry Foundation</div>
+    <div class="lbl">Plans &amp; Perspectives</div>
+  </div>
+
+  <!-- Plans row -->
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; height:40%; flex-shrink:0;">
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/poetry-plan-1.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Floor Plan 1"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/poetry-plan-2.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Floor Plan 2"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/poetry-plan-3.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Floor Plan 3"/>
+    </div>
+  </div>
+
+  <!-- Perspectives row -->
+  <div style="display:grid; grid-template-columns:2fr 1fr 1fr; gap:10px; flex:1; margin-top:10px; min-height:0;">
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/poetry-perspective.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Perspective"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/poetry-cafe.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Café Interior"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/poetry-library.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Library Interior"/>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════
+     5 · SCHINDLER ADDITION — INTRO
+═══════════════════════════════════ -->
+<div class="pg" style="display:grid; grid-template-columns:2fr 3fr;">
+
+  <div style="padding:48px 40px; display:flex; flex-direction:column; justify-content:center; border-right:0.5px solid var(--ink-15);">
+    <div class="lbl-terra" style="margin-bottom:16px;">II &nbsp;·&nbsp; Studio Project</div>
+    <div style="font-family:var(--serif); font-size:34px; font-weight:300; line-height:1.1; color:var(--ink); margin-bottom:8px;">
+      Schindler<br>Addition
+    </div>
+    <div class="lbl" style="margin-bottom:28px;">Residential Addition · West Hollywood, CA</div>
+    <div class="rule" style="margin-bottom:24px;"></div>
+    <div class="proj-info" style="margin-bottom:24px;">
+      <div class="proj-info-row"><span class="k">Course</span><span class="v">Design Studio I · 2025</span></div>
+      <div class="proj-info-row"><span class="k">Type</span><span class="v">Residential / Addition</span></div>
+      <div class="proj-info-row"><span class="k">Medium</span><span class="v">AutoCAD, Physical Model, Graphite</span></div>
+    </div>
+    <div class="rule" style="margin-bottom:24px;"></div>
+    <p style="font-family:var(--serif); font-size:13px; font-weight:300; line-height:1.8; color:var(--ink-60);">
+      A residential addition to the Schindler House in West Hollywood, one of American
+      modernism's most studied domestic works. The project investigates how a new structure
+      can extend an existing landmark without imitating it, introducing new program while
+      responding to Schindler's material palette, courtyard logic, and relationship
+      to the California landscape.
+    </p>
+  </div>
+
+  <div style="overflow:hidden; background:var(--ivory-mid); display:flex; align-items:center; justify-content:center; padding:28px;">
+    <img src="../images/schindler-elev-front.jpg"
+         style="width:100%; height:100%; object-fit:contain; display:block;"
+         alt="Front Elevation"/>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════
+     6 · SCHINDLER ADDITION — DRAWINGS
+═══════════════════════════════════ -->
+<div class="pg" style="display:flex; flex-direction:column; padding:32px 40px;">
+
+  <div class="draw-header">
+    <div class="title">Schindler Addition</div>
+    <div class="lbl">Plans, Sections &amp; Model</div>
+  </div>
+
+  <!-- Drawings row -->
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; height:42%; flex-shrink:0;">
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/schindler-plan.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Plan"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/schindler-section.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Section"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/schindler-site-plan.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Site Plan"/>
+    </div>
+  </div>
+
+  <!-- Model + elevation row -->
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; flex:1; margin-top:10px; min-height:0;">
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/schindler-model.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Model"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/schindler-model-2.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Model Detail"/>
+    </div>
+    <div style="overflow:hidden; background:var(--ivory-mid);">
+      <img src="../images/schindler-elev-left.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Left Elevation"/>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════
+     7 · SKETCHING & ART
+═══════════════════════════════════ -->
+<div class="pg" style="display:grid; grid-template-columns:2fr 3fr;">
+
+  <div style="padding:48px 40px; display:flex; flex-direction:column; justify-content:center; border-right:0.5px solid var(--ink-15);">
+    <div class="lbl-terra" style="margin-bottom:16px;">III &nbsp;·&nbsp; Personal Work</div>
+    <div style="font-family:var(--serif); font-size:34px; font-weight:300; line-height:1.1; color:var(--ink); margin-bottom:8px;">
+      Sketching<br>&amp; Art
+    </div>
+    <div class="lbl" style="margin-bottom:28px;">Observational Drawing · Lifelong</div>
+    <div class="rule" style="margin-bottom:24px;"></div>
+    <div class="proj-info" style="margin-bottom:24px;">
+      <div class="proj-info-row"><span class="k">Medium</span><span class="v">Graphite Pencil, Pen, Watercolor</span></div>
+      <div class="proj-info-row"><span class="k">Collections</span><span class="v">Allison Ramsey Studies · Inspired Sketches · Drawing Academy</span></div>
+    </div>
+    <div class="rule" style="margin-bottom:24px;"></div>
+    <p style="font-family:var(--serif); font-size:13px; font-weight:300; line-height:1.8; color:var(--ink-60);">
+      An ongoing practice of observational drawing spanning architectural study,
+      independent coursework, and personal inquiry. Drawing remains central to how
+      I develop ideas and understand buildings, from sustained studies of classical
+      architecture to rapid field sketches made in front of the subject.
+    </p>
+  </div>
+
+  <div style="padding:28px 28px 28px 20px;">
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(3,1fr); gap:8px; height:100%;">
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-ar-1.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-ar-3.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-is-1.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-is-6.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-ar-5.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-is-2.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-dc-1.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-is-4.jpg" style="width:100%; height:100%; object-fit:contain; display:block;" alt="Sketch"/>
+      </div>
+      <div style="overflow:hidden; background:var(--ivory-mid);">
+        <img src="../images/sketch-ar-7.jpg" style="width:100%; height:100%; object-fit:cover; display:block;" alt="Sketch"/>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════
+     8 · BACK COVER
+═══════════════════════════════════ -->
+<div class="pg" style="display:flex; flex-direction:column; justify-content:flex-end; padding:48px 52px;">
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; padding-top:18px; border-top:0.5px solid var(--ink-15);">
+    <div>
+      <div style="font-family:var(--serif); font-size:22px; font-weight:300; color:var(--ink); margin-bottom:6px;">Jackson Brooks</div>
+      <div class="lbl">Architecture Portfolio &nbsp;·&nbsp; 2026</div>
+    </div>
+    <div style="text-align:right;">
+      <div class="lbl" style="color:var(--terra); margin-bottom:3px;">22jwbrooks22@gmail.com</div>
+      <div class="lbl" style="color:var(--terra); margin-bottom:3px;">jacksonbrooksdesign.com</div>
+      <div class="lbl">California Baptist University &nbsp;·&nbsp; Class of 2029</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
